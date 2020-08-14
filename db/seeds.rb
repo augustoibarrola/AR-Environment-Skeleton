@@ -1,3 +1,5 @@
+School.destroy_all
+Mascot.destroy_all
 Student.destroy_all
 Teacher.destroy_all
 GradeLevel.destroy_all
@@ -12,6 +14,8 @@ Student.create(first_name: "samantha", last_name: "lurio", grade_level: "elevent
 GradeLevel.create(student_id: 1, teacher_id: 1)
 GradeLevel.create(student_id: 2, teacher_id: 1)
 
-School.create(name: "mcnair", mascot: "cougars")
-School.create(name: "military academy", mascot: "the kevins")
-School.create(name: "international studies", mascot: "the tiffanies")
+School.create(name: "mcnair", mascot_id: 1)
+School.create(name: "military academy", mascot_id: 2)
+School.create(name: "international studies", mascot_id: 1)
+Mascot.create(name: "tornadoes", school: "county prep")
+Mascot.create(name: "the gulls", school: "childrens prep for general learning")
